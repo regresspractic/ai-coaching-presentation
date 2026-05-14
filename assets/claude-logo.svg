@@ -1,0 +1,7 @@
+<svg width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="220" rx="34" fill="#F7F1E8"/>
+  <g transform="translate(58 54)">
+    <path d="M55 0L65.8 42.2L104 19.5L78.5 56L120 68.5L77.1 73.1L95.8 112L55 88.5L14.2 112L32.9 73.1L-10 68.5L31.5 56L6 19.5L44.2 42.2L55 0Z" fill="#D97757"/>
+  </g>
+  <text x="196" y="126" fill="#191713" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700">Claude</text>
+</svg>
