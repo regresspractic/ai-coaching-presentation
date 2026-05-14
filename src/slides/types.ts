@@ -73,6 +73,42 @@ export type CaseSlide = {
   afterAlt: string;
 };
 
+export type SeminarSlide = {
+  kind: "seminar";
+  title: string;
+  lead: string;
+  items: {
+    title: string;
+    body: string;
+    icon: "funnel" | "visual" | "session";
+    accent: string;
+  }[];
+};
+
+export type CosmicCtaSlide = {
+  kind: "cosmicCta";
+  title: string;
+  links: {
+    label: string;
+    url: string;
+  }[];
+};
+
+export type MythRealitySlide = {
+  kind: "mythReality";
+  myth: string;
+  reality: string;
+  points: string[];
+};
+
+export type SuperintelligenceSlide = {
+  kind: "superintelligence";
+  title: string;
+  lead: string;
+  forecast: string;
+  question: string;
+};
+
 /** Поэтапный текст, кинематографичные паузы (тайминги в компоненте). */
 export type CinematicBeatsSlide = {
   kind: "cinematicBeats";
@@ -95,5 +131,9 @@ export type Slide =
   | QuoteSlide
   | ToolsSlide
   | CaseSlide
+  | SeminarSlide
+  | CosmicCtaSlide
+  | MythRealitySlide
+  | SuperintelligenceSlide
   | CinematicBeatsSlide
   | CinematicFieldSlide;

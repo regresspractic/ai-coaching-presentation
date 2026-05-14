@@ -1,6 +1,36 @@
+import type { CSSProperties } from "react";
 import type { Slide } from "./types";
 import { CinematicBeats } from "./cinematic/CinematicBeats";
 import { CinematicField } from "./cinematic/CinematicField";
+
+function SeminarIcon({ kind }: { kind: "funnel" | "visual" | "session" }) {
+  if (kind === "funnel") {
+    return (
+      <svg viewBox="0 0 64 64" aria-hidden>
+        <path d="M14 15h36L37 32v13l-10 5V32L14 15Z" />
+        <path d="M21 21h22" className="seminar-icon-shine" />
+      </svg>
+    );
+  }
+
+  if (kind === "visual") {
+    return (
+      <svg viewBox="0 0 64 64" aria-hidden>
+        <rect x="17" y="20" width="30" height="24" rx="5" />
+        <path d="M22 39l8-9 6 6 4-4 7 7" className="seminar-icon-cutout" />
+        <circle cx="40" cy="27" r="3.5" className="seminar-icon-cutout" />
+        <path d="M19 15h26" className="seminar-icon-shine" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 64 64" aria-hidden>
+      <path d="M18 18h28a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H31l-11 7v-7h-2a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6Z" />
+      <path d="M22 28h20M22 36h13" className="seminar-icon-shine" />
+    </svg>
+  );
+}
 
 export function renderSlide(slide: Slide) {
   switch (slide.kind) {
@@ -176,6 +206,121 @@ export function renderSlide(slide: Slide) {
               />
             </article>
           </div>
+        </section>
+      );
+    case "seminar":
+      return (
+        <section className="slide-inner slide-inner--seminar">
+          <div className="seminar-copy">
+            <p className="slide-kicker">Практикум</p>
+            <h2 className="seminar-title">{slide.title}</h2>
+            <p className="seminar-lead">{slide.lead}</p>
+          </div>
+          <div className="seminar-grid">
+            {slide.items.map((item) => (
+              <article
+                className="seminar-card"
+                key={item.title}
+                style={{ "--seminar-accent": item.accent } as CSSProperties}
+              >
+                <div className="seminar-icon">
+                  <SeminarIcon kind={item.icon} />
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      );
+    case "cosmicCta":
+      return (
+        <section className="slide-inner slide-inner--cosmic">
+          <div className="cosmic-copy">
+            <p className="slide-kicker">ИИ уже здесь</p>
+            <h2 className="cosmic-title">{slide.title}</h2>
+            <div className="cosmic-links" aria-label="Контакты">
+              {slide.links.map((link) => (
+                <a
+                  className="cosmic-link"
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener"
+                  key={link.url}
+                >
+                  <span>{link.label}</span>
+                  <span aria-hidden>↗</span>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="cosmic-stage" aria-hidden>
+            <div className="cosmic-star-field">
+              {Array.from({ length: 18 }, (_, index) => (
+                <span key={index} />
+              ))}
+            </div>
+            <div className="cosmic-orbit cosmic-orbit--outer" />
+            <div className="cosmic-orbit cosmic-orbit--inner" />
+            <div className="cosmic-ai-core">
+              <span>AI</span>
+            </div>
+            <div className="cosmic-panel cosmic-panel--one">
+              <span />
+              <i />
+              <i />
+              <i />
+            </div>
+            <div className="cosmic-panel cosmic-panel--two">
+              <span />
+              <i />
+            </div>
+            <div className="cosmic-comet" />
+          </div>
+        </section>
+      );
+    case "mythReality":
+      return (
+        <section className="slide-inner slide-inner--myth">
+          <div className="myth-grid" aria-hidden>
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="myth-card myth-card--false">
+            <p className="myth-label">Заблуждение</p>
+            <h2>{slide.myth}</h2>
+          </div>
+          <div className="myth-card myth-card--true">
+            <p className="myth-label">Реальность</p>
+            <h2>{slide.reality}</h2>
+          </div>
+          <div className="myth-points">
+            {slide.points.map((point) => (
+              <p key={point}>{point}</p>
+            ))}
+          </div>
+        </section>
+      );
+    case "superintelligence":
+      return (
+        <section className="slide-inner slide-inner--super">
+          <div className="super-ring" aria-hidden>
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="super-copy">
+            <p className="slide-kicker">Следующий порог</p>
+            <h2 className="super-title">{slide.title}</h2>
+            <p className="super-lead">{slide.lead}</p>
+          </div>
+          <div className="super-side">
+            <div className="super-year">2027</div>
+            <p>{slide.forecast}</p>
+          </div>
+          <p className="super-question">{slide.question}</p>
         </section>
       );
     case "cinematicBeats":
