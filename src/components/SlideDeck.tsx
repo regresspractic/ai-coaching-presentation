@@ -196,11 +196,11 @@ export function SlideDeck({ children }: SlideDeckProps) {
             <button
               type="button"
               className="deck-btn"
-              aria-label="Предыдущий слайд"
+              aria-label="Назад"
               disabled={index === 0}
               onClick={() => go(-1)}
             >
-              ←
+              Назад
             </button>
             <span className="deck-counter">
               {index + 1} / {count}
@@ -208,11 +208,11 @@ export function SlideDeck({ children }: SlideDeckProps) {
             <button
               type="button"
               className="deck-btn"
-              aria-label="Следующий слайд"
+              aria-label="Вперед"
               disabled={index === count - 1}
               onClick={() => go(1)}
             >
-              →
+              Вперед
             </button>
           </div>
         </div>

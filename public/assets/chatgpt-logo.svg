@@ -1,0 +1,13 @@
+<svg width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="220" rx="34" fill="#F4FBF8"/>
+  <circle cx="116" cy="110" r="70" fill="#10A37F"/>
+  <g stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M116 58C139 58 158 76 158 99C158 122 139 140 116 140"/>
+    <path d="M161 84C173 104 166 130 146 142C126 154 100 147 88 127"/>
+    <path d="M160 136C149 156 124 164 104 153C84 142 76 117 87 97"/>
+    <path d="M116 162C93 162 74 144 74 121C74 98 93 80 116 80"/>
+    <path d="M71 136C59 116 66 90 86 78C106 66 132 73 144 93"/>
+    <path d="M72 84C83 64 108 56 128 67C148 78 156 103 145 123"/>
+  </g>
+  <text x="218" y="128" fill="#10A37F" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700">ChatGPT</text>
+</svg>

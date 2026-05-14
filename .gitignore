@@ -2,3 +2,6 @@ node_modules
 dist
 *.local
 .DS_Store
+index — копия.html
+public/olga.jpg
+public/assets/gpt-2-before-web.png
