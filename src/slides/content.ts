@@ -6,7 +6,7 @@ const annaWebImage = publicAsset("anna-web.jpg");
 const claudeBattleLogo = publicAsset("claude-logo.svg");
 const geminiBattleLogo = publicAsset("gemini-logo.svg");
 const chatGptBattleLogo = publicAsset("chatgpt-logo.svg");
-const gptBattleLogo = publicAsset("gpt-logo.svg");
+
 const codingLogo = publicAsset("coding-logo.svg");
 const interiorCaseImage = publicAsset("interior-case-web.jpg");
 const beforeCaseImage = publicAsset("gpt-2-before-web.jpg");
@@ -58,7 +58,7 @@ export const presentationSlides: Slide[] = [
       {
         title: "ChatGPT",
         body: "Универсальность, база знаний и метапромптинг.",
-        image: gptBattleLogo,
+        image: chatGptBattleLogo,
         accent: "#10a37f",
       },
     ],
@@ -121,18 +121,22 @@ export const presentationSlides: Slide[] = [
     {
       title: "Путешествия",
       body: "Бронирование SPA на Бали, общение на английском языке и решение организационных вопросов без знания языка.",
+      image: publicAsset("travel.jpg"),
     },
     {
       title: "Бизнес",
       body: "Создание антикризисных стратегий, визуализация сложных решений и структурирование мышления.",
+      image: publicAsset("business.jpg"),
     },
     {
       title: "Стиль",
       body: "Подбор одежды, образов и персональных рекомендаций на основе фотографий и целей.",
+      image: publicAsset("style.jpg"),
     },
     {
       title: "Повседневная жизнь",
       body: "Помощь в принятии решений, переводах, поиске информации и бытовых вопросах в режиме реального времени.",
+      image: publicAsset("life.jpg"),
     },
     {
       title: "Видео-кейс",
