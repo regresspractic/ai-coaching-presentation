@@ -173,12 +173,7 @@ export const presentationSlides: Slide[] = [
   {
     kind: "cosmicCta",
     title: "Эту презентацию сделал ИИ за пару минут. А что он может сделать для вас?",
-    links: [
-      {
-        label: "Канал «Поле Супервизии»",
-        url: "https://t.me/superVisionPole",
-      },
-    ],
+    links: [],
   },
   {
     kind: "mythReality",
