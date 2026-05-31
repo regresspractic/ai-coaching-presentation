@@ -54,7 +54,7 @@ export function renderSlide(slide: Slide) {
             <p className="slide-subtitle">{slide.subtitle}</p>
           ) : null}
           {slide.links && slide.links.length > 0 ? (
-            <div className="cosmic-links" style={{marginTop: "2rem"}}>
+            <div className="cosmic-links" style={{marginTop: "4rem"}}>
               {slide.links.map((link) => (
                 <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="cosmic-link">
                   {link.label} ↗
