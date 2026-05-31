@@ -27,6 +27,7 @@ export type CardsSlide = {
     title: string;
     body: string;
     image?: string;
+    video?: string;
     accent?: string;
   }[];
 };

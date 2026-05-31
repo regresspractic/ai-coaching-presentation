@@ -108,7 +108,15 @@ export function renderSlide(slide: Slide) {
           <div className="cards-grid">
             {slide.cards.map((card) => (
               <article className="feature-card" key={card.title}>
-                {card.image ? (
+                {card.video ? (
+                  <video
+                    className="feature-video"
+                    src={card.video}
+                    controls
+                    playsInline
+                    preload="metadata"
+                  />
+                ) : card.image ? (
                   <div className="feature-logo-wrap">
                     <img
                       className="feature-logo"
