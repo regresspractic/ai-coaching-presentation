@@ -4,6 +4,7 @@ export type HeroSlide = {
   title: string;
   subtitle?: string;
   image?: string;
+  links?: { label: string; url: string }[];
 };
 
 export type SpeakerSlide = {

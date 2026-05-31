@@ -53,6 +53,15 @@ export function renderSlide(slide: Slide) {
           {slide.subtitle ? (
             <p className="slide-subtitle">{slide.subtitle}</p>
           ) : null}
+          {slide.links && slide.links.length > 0 ? (
+            <div className="cosmic-links" style={{marginTop: "2rem"}}>
+              {slide.links.map((link) => (
+                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="cosmic-link">
+                  {link.label} ↗
+                </a>
+              ))}
+            </div>
+          ) : null}
         </section>
       );
     case "speakers":
