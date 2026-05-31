@@ -126,9 +126,9 @@ export function renderSlide(slide: Slide) {
                     preload="metadata"
                   />
                 ) : card.image ? (
-                  <div className="feature-logo-wrap">
+                  <div className="feature-photo-wrap">
                     <img
-                      className="feature-logo"
+                      className="feature-photo"
                       src={card.image}
                       alt={`Логотип ${card.title}`}
                     />
