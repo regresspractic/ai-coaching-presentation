@@ -103,6 +103,12 @@ export const presentationSlides: Slide[] = [
         image: codingLogo,
         accent: "#f59e0b",
       },
+      {
+        name: "NotebookLM",
+        body: "Анализирует данные и проводит исследования, используя надёжные источники.",
+        image: "https://notebooklm.google/images/notebooklm-logo.png",
+        accent: "#1a73e8",
+      },
     ],
   },
   {
