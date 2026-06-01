@@ -124,6 +124,17 @@ export type CinematicFieldSlide = {
   pillars: { label: string }[];
 };
 
+export type AssistantsSlide = {
+  kind: "assistants";
+  title: string;
+  items: {
+    title: string;
+    body: string;
+    icon: string;
+    accent: string;
+  }[];
+};
+
 export type Slide =
   | HeroSlide
   | SpeakerSlide
@@ -138,4 +149,5 @@ export type Slide =
   | MythRealitySlide
   | SuperintelligenceSlide
   | CinematicBeatsSlide
-  | CinematicFieldSlide;
+  | CinematicFieldSlide
+  | AssistantsSlide;

@@ -250,6 +250,27 @@ export function renderSlide(slide: Slide) {
           </div>
         </section>
       );
+    case "assistants":
+      return (
+        <section className="slide-inner slide-inner--seminar">
+          <div className="seminar-copy">
+            <h2 className="seminar-title">{slide.title}</h2>
+          </div>
+          <div className="seminar-grid">
+            {slide.items.map((item) => (
+              <article
+                className="seminar-card"
+                key={item.title}
+                style={{ "--seminar-accent": item.accent } as CSSProperties}
+              >
+                <div className="seminar-icon" style={{fontSize: "2rem", display: "flex", alignItems: "center", justifyContent: "center"}}>{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      );
     case "cosmicCta":
       return (
         <section className="slide-inner slide-inner--cosmic">
