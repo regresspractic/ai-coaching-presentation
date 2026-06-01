@@ -24,12 +24,7 @@ export default function App() {
 
   if (deck) {
     return (
-      <>
-        <a className="lp-deck-exit" href="#landing">
-          ← Лендинг
-        </a>
-        <PresentationApp />
-      </>
+<PresentationApp />
     );
   }
 
