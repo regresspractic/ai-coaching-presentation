@@ -11,7 +11,7 @@ const codingLogo = publicAsset("coding-logo.svg");
 const interiorCaseImage = publicAsset("interior-case-web.jpg");
 const beforeCaseImage = publicAsset("gpt-2-before-web.jpg");
 const olgaCaseVideo = publicAsset("olga-case-video.mp4");
-
+const annaCaseVideo = publicAsset("anna-case-video.mp4");
 /** Редактируйте этот массив: один блок = один слайд, порядок блоков = порядок показа. */
 export const presentationSlides: Slide[] = [
   {
@@ -142,6 +142,11 @@ export const presentationSlides: Slide[] = [
       title: "Видео-кейс",
       body: "Короткий пример того, как ИИ помогает быстро превращать живую идею в понятный визуальный материал.",
       video: olgaCaseVideo,
+    },
+    {
+      title: "Видео-кейс",
+      body: "Короткий пример того, как ИИ помогает быстро превращать живую идею в понятный визуальный материал.",
+      video: annaCaseVideo,
     },
   ],
 },
