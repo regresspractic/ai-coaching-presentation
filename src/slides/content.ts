@@ -106,7 +106,7 @@ export const presentationSlides: Slide[] = [
       {
         name: "NotebookLM",
         body: "Анализирует данные и проводит исследования, используя надёжные источники.",
-        image: "https://notebooklm.google/images/notebooklm-logo.png",
+        image: publicAsset("notebooklm-logo.svg"),
         accent: "#1a73e8",
       },
     ],
