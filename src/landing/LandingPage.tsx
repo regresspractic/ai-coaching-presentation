@@ -41,7 +41,6 @@ export default function LandingPage() {
         </a>
         <nav className="lp-nav-links" aria-label="Разделы">
           <a href="#about">О чем</a>
-          <a href="#format">Формат</a>
           <a href="#speakers">Авторы</a>
           <a href="#deck">Слайды</a>
         </nav>
@@ -66,19 +65,8 @@ export default function LandingPage() {
                 <a className="lp-btn lp-btn--primary" href="#deck">
                   Открыть презентацию
                 </a>
-                <a className="lp-btn lp-btn--ghost" href="#format">
-                  Посмотреть формат
-                </a>
               </div>
             </div>
-            <aside className="lp-hero-card" aria-label="Текущий статус">
-              <h3>Рабочая версия</h3>
-              <p>
-                Контент вынесен в один редактируемый файл. Можно спокойно
-                дописывать финальные слайды, менять формулировки и сразу
-                смотреть результат в браузере.
-              </p>
-            </aside>
           </div>
         </section>
 
@@ -124,28 +112,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="lp-section" id="format" aria-labelledby="format-title">
-          <Reveal>
-            <div className="lp-section-head">
-              <h2 id="format-title">Формат для совместной правки</h2>
-              <p>
-                Сайт можно открыть локально сейчас, а позже выложить на GitHub
-                Pages или любой статический хостинг. Адрес с `#7` сразу откроет
-                седьмой слайд, поэтому правки удобно обсуждать точечно.
-              </p>
-            </div>
-          </Reveal>
-          <Reveal>
-            <div className="lp-card" style={{ padding: "1.25rem 1.35rem" }}>
-              <ul className="lp-list">
-                <li>Телефон: свайп влево и вправо, кнопки снизу, адаптивная высота.</li>
-                <li>Компьютер: стрелки, пробел, PageUp/PageDown, Home/End.</li>
-                <li>Полный экран: клавиша F в режиме презентации.</li>
-                <li>Правки: основной сценарий лежит в `src/slides/content.ts`.</li>
-              </ul>
-            </div>
-          </Reveal>
-        </section>
+
 
         <section className="lp-section" id="speakers" aria-labelledby="speakers-title">
           <Reveal>
