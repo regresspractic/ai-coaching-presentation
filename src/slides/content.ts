@@ -1,7 +1,7 @@
 import type { Slide } from "./types";
 
 const publicAsset = (fileName: string) => `${import.meta.env.BASE_URL}assets/${fileName}`;
-const olgaImage = publicAsset("olga-profile-web.jpg");
+const olgaImage = publicAsset("olga-new.jpg");
 const annaWebImage = publicAsset("anna-web.jpg");
 const claudeBattleLogo = publicAsset("claude-logo.svg");
 const geminiBattleLogo = publicAsset("gemini-logo.svg");
