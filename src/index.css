@@ -1461,6 +1461,23 @@ body {
   pointer-events: auto;
 }
 
+@media (max-width: 640px) {
+  .deck-chrome-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .deck-chrome-row > .deck-progress {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .deck-chrome-row > .deck-controls {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
 .deck-chrome-row > .deck-progress {
   flex-shrink: 0;
 }
