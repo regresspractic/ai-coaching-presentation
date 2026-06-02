@@ -1486,6 +1486,23 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  .deck-controls {
+    gap: 0.4rem;
+  }
+  .deck-btn {
+    min-width: 3.8rem;
+    height: 2.6rem;
+    padding: 0 0.65rem;
+    font-size: 0.82rem;
+    border-radius: 0.8rem;
+  }
+  .deck-counter {
+    min-width: 3rem;
+    font-size: 0.78rem;
+  }
+}
+
 .deck-progress {
   display: flex;
   align-items: center;
