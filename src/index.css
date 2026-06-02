@@ -1467,6 +1467,8 @@ body {
 
 .deck-chrome-row > .deck-controls {
   flex-shrink: 0;
+  margin-left: auto;
+  padding-right: clamp(0.5rem, 3vw, 1rem);
 }
 
 .deck-hint {
