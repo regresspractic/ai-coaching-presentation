@@ -28,7 +28,6 @@ export const presentationSlides: Slide[] = [
         role: "Independent Director · Executive Coach (ICF)",
         bio: "Более 21 года в управлении крупными командами и трансформации бизнеса. Интегрирует ИИ и глубокую психологию в работу с топ-менеджментом.",
         image: olgaImage,
-        imageVariant: "wide",
         instagram: "https://www.instagram.com/komissarova_olga_s?igsh=M2E2ODQ3bzI0aDA1",
       },
       {
