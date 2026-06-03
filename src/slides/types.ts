@@ -31,6 +31,7 @@ export type CardsSlide = {
     image?: string;
     imagePosition?: string;
     imageTall?: boolean;
+    imagePadding?: string;
     video?: string;
     accent?: string;
   }[];

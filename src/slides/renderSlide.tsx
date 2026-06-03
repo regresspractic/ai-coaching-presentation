@@ -126,7 +126,7 @@ export function renderSlide(slide: Slide) {
                     preload="metadata"
                   />
                 ) : card.image ? (
-                  <div className={card.imageTall ? "feature-photo-wrap feature-photo-wrap--tall" : "feature-photo-wrap"}>
+                  <div className={card.imageTall ? "feature-photo-wrap feature-photo-wrap--tall" : "feature-photo-wrap"} style={card.imagePadding ? {paddingTop: card.imagePadding} : undefined}>
                     <img
                       className="feature-photo"
                       src={card.image}
