@@ -2002,6 +2002,10 @@ body.landing-mode #root {
 
 
 /* fix: lower business infographic on slide 8 */
+.feature-photo-wrap:has(img[src*="business.jpg"]) {
+  margin-top: 1.2rem;
+}
+
 img[src*="business.jpg"] {
-  object-position: center 58%;
+  object-position: center top;
 }
