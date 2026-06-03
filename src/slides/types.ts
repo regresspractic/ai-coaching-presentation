@@ -4,6 +4,7 @@ export type HeroSlide = {
   title: string;
   subtitle?: string;
   image?: string;
+  imagePosition?: string;
   links?: { label: string; url: string }[];
 };
 
@@ -28,6 +29,7 @@ export type CardsSlide = {
     title: string;
     body: string;
     image?: string;
+    imagePosition?: string;
     video?: string;
     accent?: string;
   }[];

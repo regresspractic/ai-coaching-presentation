@@ -131,6 +131,7 @@ export function renderSlide(slide: Slide) {
                       className="feature-photo"
                       src={card.image}
                       alt={`Логотип ${card.title}`}
+                      style={card.imagePosition ? {objectPosition: card.imagePosition} : undefined}
                     />
                   </div>
                 ) : null}
