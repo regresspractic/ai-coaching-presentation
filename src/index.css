@@ -303,8 +303,19 @@ body {
   transform: translateY(24px);
 }
 
+@keyframes greet {
+  0%   { transform: rotate(0deg); }
+  20%  { transform: rotate(8deg); }
+  40%  { transform: rotate(-4deg); }
+  60%  { transform: rotate(5deg); }
+  80%  { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .speaker-photo {
   width: min(11.5rem, 30vw);
+  animation: greet 1.2s ease-in-out 0.5s both;
+  transform-origin: bottom center;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   margin-top: 1rem;
