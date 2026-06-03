@@ -2005,11 +2005,9 @@ body.landing-mode #root {
 }
 
 
-/* fix: lower business infographic on slide 8 */
-.feature-photo-wrap:has(img[src*="business.jpg"]) {
-  margin-top: 1.2rem;
-}
-
-img[src*="business.jpg"] {
-  object-position: center top;
+\n
+/* EMERGENCY FIX: move ONLY business infographic down on slide 8 */
+.feature-card:has(img[src*="business.jpg"]) .feature-photo-wrap {
+  transform: translateY(5.5rem);
+  margin-bottom: 5.8rem;
 }
