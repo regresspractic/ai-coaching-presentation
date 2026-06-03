@@ -138,6 +138,7 @@ export const presentationSlides: Slide[] = [
       body: "Подбор одежды, образов и персональных рекомендаций на основе фотографий и целей.",
       image: publicAsset("style.jpg"),
       imagePosition: "center top",
+      imageTall: true,
     },
     {
       title: "Повседневная жизнь",

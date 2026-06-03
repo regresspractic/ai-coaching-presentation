@@ -30,6 +30,7 @@ export type CardsSlide = {
     body: string;
     image?: string;
     imagePosition?: string;
+    imageTall?: boolean;
     video?: string;
     accent?: string;
   }[];

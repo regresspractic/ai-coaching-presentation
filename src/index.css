@@ -1988,6 +1988,10 @@ body.landing-mode #root {
   margin-bottom: 0.15rem;
 }
 
+.feature-photo-wrap--tall {
+  height: 18rem;
+}
+
 .feature-photo {
   width: 100%;
   height: 100%;
