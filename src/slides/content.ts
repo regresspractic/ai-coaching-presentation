@@ -132,7 +132,7 @@ export const presentationSlides: Slide[] = [
       title: "Бизнес",
       body: "Создание антикризисных стратегий, визуализация сложных решений и структурирование мышления.",
       image: publicAsset("business.jpg"),
-      imagePosition: "center 30%",
+      imagePosition: "center 80%",
     },
     {
       title: "Стиль",

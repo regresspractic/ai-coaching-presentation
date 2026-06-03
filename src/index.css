@@ -1999,3 +1999,9 @@ body.landing-mode #root {
   object-position: center top;
   border-radius: 1rem;
 }
+
+
+/* fix: lower business infographic on slide 8 */
+img[src*="business.jpg"] {
+  object-position: center 58%;
+}
