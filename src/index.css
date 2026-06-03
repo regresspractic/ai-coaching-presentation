@@ -2011,3 +2011,8 @@ body.landing-mode #root {
   transform: translateY(5.5rem);
   margin-bottom: 5.8rem;
 }
+\n
+/* FINAL FIX: slide 8 business card image lower */
+.cards-grid .feature-card:nth-child(2) .feature-photo-wrap {
+  margin-top: 4.5rem !important;
+}
