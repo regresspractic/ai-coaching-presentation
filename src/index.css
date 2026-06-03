@@ -2006,13 +2006,4 @@ body.landing-mode #root {
 
 
 \n
-/* EMERGENCY FIX: move ONLY business infographic down on slide 8 */
-.feature-card:has(img[src*="business.jpg"]) .feature-photo-wrap {
-  transform: translateY(5.5rem);
-  margin-bottom: 5.8rem;
-}
 \n
-/* FINAL FIX: slide 8 business card image lower */
-.cards-grid .feature-card:nth-child(2) .feature-photo-wrap {
-  margin-top: 4.5rem !important;
-}
