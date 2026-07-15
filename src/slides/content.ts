@@ -13,6 +13,8 @@ const beforeCaseImage = publicAsset("gpt-2-before-web.jpg");
 const olgaCaseVideo = publicAsset("olga-case-video.mp4");
 const annaCaseVideo = publicAsset("anna-case-video.mp4");
 const aiPartnerDemoVideo = publicAsset("ai-partner-cinematic-demo.mp4");
+const aiPartnerLightImage = publicAsset("ai-partner-light.png");
+const aiPartnerQr = publicAsset("aipartner-qr-july16.png");
 /** Редактируйте этот массив: один блок = один слайд, порядок блоков = порядок показа. */
 export const presentationSlides: Slide[] = [
   {
@@ -224,7 +226,16 @@ export const presentationSlides: Slide[] = [
   },
   {
     kind: "assistants",
-    title: "Основные помощники коуча",
+    title: "AI-Partner",
+    slogan: "Всё для развития личного бренда —\nв одном AI-Partner",
+    note: "Копирайтер, SMM, визуал и маркетинг —\nв одном пространстве",
+    visual: aiPartnerLightImage,
+    qr: {
+      image: aiPartnerQr,
+      target: "https://t.me/aipartner_olga_bot?start=JULY16",
+      label: "Попробовать бесплатно",
+      linkLabel: "t.me/aipartner_olga_bot",
+    },
     items: [
       {
         title: "Копирайтер",

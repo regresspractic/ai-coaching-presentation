@@ -147,6 +147,15 @@ export type CinematicFieldSlide = {
 export type AssistantsSlide = {
   kind: "assistants";
   title: string;
+  slogan?: string;
+  note?: string;
+  visual?: string;
+  qr?: {
+    image: string;
+    target: string;
+    label: string;
+    linkLabel: string;
+  };
   items: {
     title: string;
     body: string;

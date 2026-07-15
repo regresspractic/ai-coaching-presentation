@@ -254,22 +254,52 @@ export function renderSlide(slide: Slide) {
       );
     case "assistants":
       return (
-        <section className="slide-inner slide-inner--seminar">
-          <div className="seminar-copy">
-            <h2 className="seminar-title">{slide.title}</h2>
+        <section className="slide-inner slide-inner--ai-partner">
+          <div className="ai-partner-copy">
+            <div>
+              <h2 className="ai-partner-title">{slide.title}</h2>
+              {slide.slogan ? (
+                <p className="ai-partner-slogan">{slide.slogan}</p>
+              ) : null}
+              {slide.note ? <p className="ai-partner-note">{slide.note}</p> : null}
+            </div>
+            <div className="ai-partner-roles">
+              {slide.items.map((item) => (
+                <article
+                  className="ai-partner-role"
+                  key={item.title}
+                  style={{ "--seminar-accent": item.accent } as CSSProperties}
+                >
+                  <span className="ai-partner-role-icon" aria-hidden>{item.icon}</span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+            {slide.qr ? (
+              <div className="ai-partner-qr-block">
+                <a
+                  className="ai-partner-qr-link"
+                  href={slide.qr.target}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-qr-target={slide.qr.target}
+                >
+                  <img src={slide.qr.image} alt={`QR: ${slide.qr.target}`} />
+                </a>
+                <div>
+                  <p>{slide.qr.label}</p>
+                  <a href={slide.qr.target} target="_blank" rel="noopener noreferrer">
+                    {slide.qr.linkLabel}
+                  </a>
+                </div>
+              </div>
+            ) : null}
           </div>
-          <div className="seminar-grid">
-            {slide.items.map((item) => (
-              <article
-                className="seminar-card"
-                key={item.title}
-                style={{ "--seminar-accent": item.accent } as CSSProperties}
-              >
-                <div className="seminar-icon" style={{fontSize: "2rem", display: "flex", alignItems: "center", justifyContent: "center"}}>{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
+          <div className="ai-partner-portal" aria-label="AI-Partner">
+            {slide.visual ? <img src={slide.visual} alt="AI-Partner" /> : null}
           </div>
         </section>
       );
