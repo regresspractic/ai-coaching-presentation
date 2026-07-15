@@ -12,6 +12,7 @@ const interiorCaseImage = publicAsset("interior-case-web.jpg");
 const beforeCaseImage = publicAsset("gpt-2-before-web.jpg");
 const olgaCaseVideo = publicAsset("olga-case-video.mp4");
 const annaCaseVideo = publicAsset("anna-case-video.mp4");
+const aiPartnerDemoVideo = publicAsset("ai-partner-cinematic-demo.mp4");
 /** Редактируйте этот массив: один блок = один слайд, порядок блоков = порядок показа. */
 export const presentationSlides: Slide[] = [
   {
@@ -107,6 +108,52 @@ export const presentationSlides: Slide[] = [
         body: "Анализирует данные и проводит исследования, используя надёжные источники.",
         image: publicAsset("notebooklm-logo.svg"),
         accent: "#1a73e8",
+      },
+    ],
+  },
+  {
+    kind: "aiToolsDemo",
+    title: "Что ещё можно создавать с помощью ИИ",
+    categories: [
+      {
+        title: "AI-аватары",
+        tools: "HeyGen · Synthesia",
+      },
+      {
+        title: "Видео и монтаж",
+        tools: "CapCut · Runway · Descript",
+      },
+      {
+        title: "Презентации и анимация",
+        tools: "Canva · Gamma · Vyond",
+      },
+      {
+        title: "Онлайн-курсы",
+        tools: "iSpring · Articulate 360 · H5P",
+      },
+      {
+        title: "AI-озвучивание",
+        tools: "ElevenLabs · Speechify",
+      },
+    ],
+    videos: [
+      {
+        title: "AI-Partner cinematic demo",
+        label: "Центральный пример",
+        src: aiPartnerDemoVideo,
+        emphasis: "primary",
+      },
+      {
+        title: "Olga case",
+        label: "Видео-кейс",
+        src: olgaCaseVideo,
+        emphasis: "secondary",
+      },
+      {
+        title: "Anna case",
+        label: "Видео-кейс",
+        src: annaCaseVideo,
+        emphasis: "secondary",
       },
     ],
   },

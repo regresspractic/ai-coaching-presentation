@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import type { Slide } from "./types";
+import { AdditionalAiToolsSlide } from "./AdditionalAiToolsSlide";
 import { CinematicBeats } from "./cinematic/CinematicBeats";
 import { CinematicField } from "./cinematic/CinematicField";
 
@@ -362,6 +363,8 @@ export function renderSlide(slide: Slide) {
           <p className="super-question">{slide.question}</p>
         </section>
       );
+    case "aiToolsDemo":
+      return <AdditionalAiToolsSlide slide={slide} />;
     case "cinematicBeats":
       return (
         <CinematicBeats lines={slide.lines} finale={slide.finale} />

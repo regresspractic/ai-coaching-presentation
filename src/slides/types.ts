@@ -115,6 +115,21 @@ export type SuperintelligenceSlide = {
   question: string;
 };
 
+export type AiToolsDemoSlide = {
+  kind: "aiToolsDemo";
+  title: string;
+  categories: {
+    title: string;
+    tools: string;
+  }[];
+  videos: {
+    title: string;
+    label: string;
+    src: string;
+    emphasis?: "primary" | "secondary";
+  }[];
+};
+
 /** Поэтапный текст, кинематографичные паузы (тайминги в компоненте). */
 export type CinematicBeatsSlide = {
   kind: "cinematicBeats";
@@ -152,6 +167,7 @@ export type Slide =
   | CosmicCtaSlide
   | MythRealitySlide
   | SuperintelligenceSlide
+  | AiToolsDemoSlide
   | CinematicBeatsSlide
   | CinematicFieldSlide
   | AssistantsSlide;
