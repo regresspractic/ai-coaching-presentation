@@ -113,9 +113,9 @@ export function renderSlide(slide: Slide) {
       );
     case "cards":
       return (
-        <section className="slide-inner slide-inner--wide">
+        <section className={`slide-inner slide-inner--wide${slide.layout === "lifeCases" ? " slide-inner--life-cases" : ""}`}>
           <h2 className="slide-heading">{slide.title}</h2>
-          <div className="cards-grid">
+          <div className={`cards-grid${slide.layout === "lifeCases" ? " cards-grid--life-cases" : ""}`}>
             {slide.cards.map((card) => (
               <article className="feature-card" key={card.title}>
                 {card.video ? (

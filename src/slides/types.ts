@@ -25,6 +25,7 @@ export type SpeakerSlide = {
 export type CardsSlide = {
   kind: "cards";
   title: string;
+  layout?: "lifeCases";
   cards: {
     title: string;
     body: string;
