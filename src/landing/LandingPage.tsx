@@ -6,6 +6,7 @@ const telegramUrl = "https://t.me/aipartner_olga_bot?start=JULY16";
 const asset = (fileName: string) => `${import.meta.env.BASE_URL}assets/${fileName}`;
 const robotImage = asset("ai-partner-white-hero.jpeg");
 const qrImage = asset("aipartner-qr-july16.png");
+const onboardingImage = asset("onboarding-2-0.png");
 
 const modules = [
   "Авторский стиль",
@@ -328,6 +329,26 @@ export default function LandingPage() {
           https://t.me/aipartner_olga_bot?start=JULY16
         </a>
       </SlideShell>
+
+      <section className="ap-onboarding-slide" id="slide-onboarding" aria-label="Онбординг AI-Partner">
+        <div className="ap-onboarding-frame">
+          <img src={onboardingImage} alt="Онбординг AI-Partner" loading="lazy" decoding="async" />
+          <a
+            className="ap-onboarding-hotspot ap-onboarding-hotspot-url"
+            href={telegramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Открыть AI-Partner в Telegram"
+          />
+          <a
+            className="ap-onboarding-hotspot ap-onboarding-hotspot-qr"
+            href={telegramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Открыть Telegram по QR-коду AI-Partner"
+          />
+        </div>
+      </section>
 
       <footer className="ap-privacy" id="privacy">
         <a href={telegramUrl} target="_blank" rel="noopener noreferrer">Telegram</a>
